@@ -1,0 +1,269 @@
+.nfc-product-event {
+	.nfc-product-event-details {
+		> div {
+			margin-bottom: 30px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	form.nfc-product-event-form {
+		position: relative;
+
+		* {
+			transition: all 0.25s ease-in-out;
+		}
+
+		> div {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: inline-block;
+			margin-right: 10px;
+			margin-bottom: 13px;
+
+			> span {
+				display: inline-block;
+				font-size: 13px;
+				text-transform: uppercase;
+				letter-spacing: 0.4px;
+				background-color: var(--nfc-color--light-grey);
+				padding: 6px 13px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			input {
+				position: absolute;
+				visibility: hidden;
+				opacity: 0;
+
+				&:checked {
+					+ span {
+						background-color: var(--nfc-color--dark);
+						color: var(--nfc-color--light);
+					}
+				}
+			}
+		}
+
+		textarea {
+			background-color: transparent;
+			border: 1px solid var(--nfc-color--border);
+			border-radius: 4px;
+		}
+
+		.nfc-events-file-upload {
+			> p {
+				font-size: 14px;
+
+				span {
+					opacity: 0.5;
+				}
+			}
+
+			.nfc-events-attachment {
+				position: absolute;
+				opacity: 0;
+				visibility: hidden;
+			}
+
+			#nfc-events-files-names {
+				display: grid;
+				grid-template-columns: repeat(4, 1fr);
+				grid-gap: 20px 10px;
+				margin-bottom: 10px;
+
+				> div {
+					position: relative;
+				}
+			}
+
+			.nfc-events-file-img {
+				img {
+					max-width: 100%;
+				}
+			}
+
+			.nfc-events-file-name {
+				display: none;
+			}
+
+			.nfc-events-file-delete {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				right: -8px;
+				top: -8px;
+				width: 20px;
+				height: 20px;
+				background: var(--nfc-color--dark);
+				color: var(--nfc-color--light);
+				border-radius: 100px;
+				font-size: 10px;
+				font-weight: 700;
+				padding-left: 1px;
+				cursor: pointer;
+			}
+		}
+
+		.nfc-product-event-form-open-submit-modal {
+			background-color: var(--nfc-color--dark);
+			text-align: center;
+			width: 100%;
+			padding: 13px 30px;
+			font-size: 13px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			border-radius: 100px;
+			color: var(--nfc-color--light);
+			cursor: pointer;
+		}
+
+		.nfc-product-event-form-response {
+			display: none;
+			background: #f2f2f2;
+			padding: 15px 20px;
+			border-radius: 4px;
+			font-size: 16px;
+			color: var(--nfc-color--dark);
+		}
+
+		.nfc-product-event-form-modal {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0;
+			visibility: hidden;
+			transition: all 0.25s;
+
+			&::after {
+				content: "";
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: var(--nfc-color--dark);
+				opacity: 0.6;
+				z-index: 99;
+			}
+		}
+
+		.nfc-product-event-form-modal-wrap {
+			display: block;
+			text-align: center;
+			background-color: var(--nfc-color--light);
+			padding: 40px 20px;
+			margin: 20px;
+			border-radius: 10px;
+			z-index: 999;
+			filter: drop-shadow(0 12px 24px rgb(104 112 118 / 0.15))
+				drop-shadow(0 12px 14px rgb(104 112 118 / 0.1));
+
+			h4 {
+				margin-bottom: 30px;
+			}
+
+			@media (min-width: 900px) {
+				padding: 50px 50px 30px 50px;
+				margin: 0;
+			}
+		}
+
+		.nfc-product-event-form-close-submit-modal {
+			display: block;
+			margin: 10px auto 0;
+			background-color: transparent;
+			color: var(--nfc-color--dark);
+			opacity: 0.5;
+		}
+
+		.nfc-product-event-form-submit {
+			min-width: 50%;
+			padding: 16px;
+		}
+
+		&.--modal-active {
+			.nfc-product-event-form-modal {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+
+		&.--loading {
+			.nfc-product-event-form-submit {
+				&::after {
+					content: "";
+					display: inline-block;
+					background-image: url(#{$imagePath}/loader-light.svg);
+					background-repeat: no-repeat;
+					background-size: 35px;
+					background-position: center;
+					width: 25px;
+					height: 16px;
+					margin-bottom: -3px;
+				}
+			}
+		}
+
+		&.--error {
+			.nfc-product-event-form-response {
+				display: block;
+				background-color: var(--nfc-color--error);
+				color: var(--nfc-color--light)
+			}
+		}
+
+		&.--success {
+			.nfc-product-event-form-open-submit-modal {
+				pointer-events: none;
+				background-color: var(--nfc-color--green);
+
+				&::after {
+					content: "";
+					display: inline-block;
+					background-image: url(#{$imagePath}/success.svg);
+					background-repeat: no-repeat;
+					background-size: 14px;
+					background-position: center;
+					width: 20px;
+					height: 18px;
+					margin-left: 8px;
+					margin-bottom: -4px;
+				}
+			}
+
+			input,
+			label,
+			textarea {
+				pointer-events: none;
+			}
+
+			input {
+				&[type="radio"] {
+					&:checked {
+						+ span {
+							background-color: var(--nfc-color--green);
+						}
+					}
+				}
+			}
+
+			.nfc-product-event-form-response {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,703 @@
+# Copyright (C) 2023 Maksimer
+# This file is distributed under the same license as the NFC Events plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: NFC Events 0.4.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/nfc-events\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2023-01-31T09:06:11+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.7.1\n"
+"X-Domain: nfc-events\n"
+
+#. Plugin Name of the plugin
+#: classes/Admin/class-admin-settings.php:39
+#: classes/Admin/class-admin-settings.php:40
+#: classes/Admin/class-admin-settings.php:69
+#: classes/Blocks/class-patterns.php:39
+msgid "NFC Events"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://maksimer.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Create unique NFC product tag URLs, custom user roles, NFC pages and blocks, allow specific users to create events by scanning NFC tags, manage all events and  more."
+msgstr ""
+
+#. Author of the plugin
+msgid "Maksimer"
+msgstr ""
+
+#: classes/Admin/class-admin-filters.php:67
+#: templates/nfc-events-log-filters.php:39
+msgid "All statuses"
+msgstr ""
+
+#: classes/Admin/class-admin-links.php:39
+msgid "Documentation"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:50
+#: classes/Admin/class-admin-settings.php:51
+msgid "Settings"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:75
+msgid "Redirections"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:76
+msgid "Roles"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:77
+#: classes/Admin/class-admin-settings.php:166
+#: classes/Events/class-events-bulk-actions.php:40
+msgid "Export"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:126
+msgid "User Redirection"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:133
+msgid "User pages"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:146
+msgid "User Roles"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:153
+msgid "Add NFC user roles"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:173
+msgid "Export tag url's"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:181
+msgid "Export events"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:194
+msgid "Select pages for available user roles. Logged in user with these roles will be redirected to their selected pages."
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:229
+msgid "Create, archive or remove custom user roles."
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:261
+msgid "Create role +"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:280
+msgid "Name"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:282
+msgid "Select user capabilities"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:284
+msgid "Select capabilities"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:301
+msgid "Archive"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:302
+msgid "Unarchive"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:309
+msgid "Delete"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:321
+msgid "Easily export all NFC tag url's or all of your event posts into CSV files."
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:333
+msgid "You have no post types, export is disabled right now!"
+msgstr ""
+
+#: classes/Admin/class-admin-settings.php:361
+msgid "Currently you have no events, export is disabled!"
+msgstr ""
+
+#: classes/Blocks/class-patterns.php:46
+msgid "Event form blocks pattern"
+msgstr ""
+
+#: classes/Blocks/class-shortcodes.php:62
+msgid "Product title"
+msgstr ""
+
+#: classes/Blocks/class-shortcodes.php:105
+msgid "Error! Nonce failed or no post ID passed!"
+msgstr ""
+
+#: classes/Blocks/class-shortcodes.php:117
+msgid "Error! Wrong post ID!"
+msgstr ""
+
+#: classes/Blocks/class-shortcodes.php:146
+msgid "You need to be logged in to view events log!"
+msgstr ""
+
+#: classes/Events/class-events-ajax.php:40
+#: classes/Export/class-export-csv.php:39
+#: classes/Resources/class-resources-ajax.php:40
+msgid "No nonce!"
+msgstr ""
+
+#: classes/Events/class-events-ajax.php:54
+msgid "Select one of the events."
+msgstr ""
+
+#: classes/Events/class-events-ajax.php:73
+#: classes/Resources/class-resources-ajax.php:67
+msgid "Something went wrong! Please try later again."
+msgstr ""
+
+#: classes/Events/class-events-ajax.php:94
+msgid "Thank you, the event is received!"
+msgstr ""
+
+#: classes/Events/class-events-bulk-actions.php:78
+msgid "Error during creation of events raw data!"
+msgstr ""
+
+#. translators: %d: number of posts
+#: classes/Events/class-events-bulk-actions.php:88
+msgid "Exported %d events."
+msgstr ""
+
+#: classes/Events/class-events-bulk-actions.php:92
+msgid "Download again"
+msgstr ""
+
+#: classes/Events/class-events-bulk-actions.php:97
+msgid "To export all events, navigate to NFC Events > Settings > Export."
+msgstr ""
+
+#: classes/Events/class-events-columns.php:36
+#: templates/nfc-events-log-loop.php:32
+msgid "Status"
+msgstr ""
+
+#: classes/Events/class-events-columns.php:37
+msgid "Unique"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:39
+msgid "Event Data"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:61
+msgid "Event #"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:65
+msgid "General"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:68
+msgid "Date created:"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:75
+msgid "Event status:"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:93
+#: templates/nfc-events-log-loop.php:82
+msgid "Product:"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:100
+#: templates/nfc-events-log-loop.php:92
+msgid "Unique:"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:107
+msgid "User data"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:114
+msgid "User ID:"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:118
+#: templates/nfc-events-log-loop.php:124
+msgid "Role:"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:123
+#: templates/nfc-events-log-loop.php:129
+msgid "Email:"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:132
+#: templates/nfc-events-log-loop.php:35
+msgid "Comment"
+msgstr ""
+
+#: classes/Events/class-events-meta-boxes.php:150
+#: templates/nfc-events-log-loop.php:36
+msgid "Files"
+msgstr ""
+
+#: classes/Events/class-events-register.php:34
+msgctxt "Post Type General Name"
+msgid "Events"
+msgstr ""
+
+#: classes/Events/class-events-register.php:35
+msgctxt "Post Type Singular Name"
+msgid "Event"
+msgstr ""
+
+#: classes/Events/class-events-register.php:36
+#: classes/Events/class-events-register.php:38
+msgid "Events"
+msgstr ""
+
+#: classes/Events/class-events-register.php:37
+msgid "Parent Event"
+msgstr ""
+
+#: classes/Events/class-events-register.php:39
+msgid "View Event"
+msgstr ""
+
+#: classes/Events/class-events-register.php:40
+msgid "Add New Event"
+msgstr ""
+
+#: classes/Events/class-events-register.php:41
+#: classes/Pages/class-pages-register.php:41
+#: classes/Statuses/class-statuses-register.php:41
+msgid "Add New"
+msgstr ""
+
+#: classes/Events/class-events-register.php:42
+msgid "Edit Event"
+msgstr ""
+
+#: classes/Events/class-events-register.php:43
+msgid "Update Event"
+msgstr ""
+
+#: classes/Events/class-events-register.php:44
+msgid "Search Event"
+msgstr ""
+
+#: classes/Events/class-events-register.php:45
+#: classes/Pages/class-pages-register.php:45
+#: classes/Statuses/class-statuses-register.php:45
+msgid "Not Found"
+msgstr ""
+
+#: classes/Events/class-events-register.php:46
+#: classes/Pages/class-pages-register.php:46
+#: classes/Statuses/class-statuses-register.php:46
+msgid "Not found in Trash"
+msgstr ""
+
+#: classes/Events/class-events-register.php:51
+msgid "This is where post events are stored."
+msgstr ""
+
+#: classes/Export/class-export-csv.php:52
+msgid "Select one of the post types."
+msgstr ""
+
+#: classes/Export/class-export-csv.php:65
+msgid "Error, No product with this post type!"
+msgstr ""
+
+#: classes/Export/class-export-csv.php:75
+msgid "Export complete."
+msgstr ""
+
+#: classes/Export/class-export-csv.php:75
+msgid "Click here to download the file."
+msgstr ""
+
+#: classes/Helpers/class-helpers-user.php:54
+msgid "No such user"
+msgstr ""
+
+#. translators: %s: Size of the file
+#: classes/Helpers/class-helpers.php:50
+msgid "Image %s is too large!"
+msgstr ""
+
+#. translators: %s: Size of the file
+#: classes/Helpers/class-helpers.php:71
+msgid "Error uploading image: %s"
+msgstr ""
+
+#. translators: %s: Size of the file
+#: classes/Helpers/class-helpers.php:95
+msgid "Event post could not be inserted!"
+msgstr ""
+
+#: classes/Pages/class-pages-meta-boxes.php:39
+#: classes/Statuses/class-statuses-meta-boxes.php:39
+#: blocks/restricted-content/src/_edit.js:57
+#: build/blocks/restricted-content-index.js:11
+msgid "Allowed user roles"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:34
+msgctxt "Post Type General Name"
+msgid "Pages"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:35
+msgctxt "Post Type Singular Name"
+msgid "Page"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:36
+#: classes/Pages/class-pages-register.php:38
+msgid "Pages"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:37
+msgid "Parent Page"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:39
+msgid "View Page"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:40
+msgid "Add New Page"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:42
+msgid "Edit Page"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:43
+msgid "Update Page"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:44
+msgid "Search Page"
+msgstr ""
+
+#: classes/Pages/class-pages-register.php:51
+msgid "This is where NFC pages are stored."
+msgstr ""
+
+#: classes/Products/class-products-fields.php:44
+#: classes/Products/class-products-fields.php:100
+msgid "NFC Events Settings"
+msgstr ""
+
+#: classes/Products/class-products-fields.php:52
+#: classes/Products/class-products-fields.php:104
+msgid "Set total amount of your products (all product on stock and those that are currently rented)."
+msgstr ""
+
+#: classes/Products/class-products-meta-boxes.php:64
+msgid "Events Log"
+msgstr ""
+
+#: classes/Resources/class-resources-admin.php:36
+#: classes/Resources/class-resources-admin.php:37
+#: classes/Resources/class-resources-admin.php:54
+msgid "Resources"
+msgstr ""
+
+#: classes/Resources/class-resources-admin.php:122
+msgid "Product name or ID"
+msgstr ""
+
+#: classes/Resources/class-resources-admin.php:125
+msgid "All types"
+msgstr ""
+
+#: classes/Resources/class-resources-admin.php:141
+#: templates/nfc-events-log-filters.php:53
+msgid "Filter"
+msgstr ""
+
+#: classes/Resources/class-resources-admin.php:147
+msgid "You have no files currently."
+msgstr ""
+
+#: classes/Resources/class-resources-admin.php:152
+msgid "Here you can find all the files related to your events. Click on item to view/download or click the X button to delete the item."
+msgstr ""
+
+#. translators: %1$s: offset from, %2$s: offset to, %3$s: number of total files
+#: classes/Resources/class-resources-admin.php:161
+msgid "Showing: %1$s-%2$s of %3$s files"
+msgstr ""
+
+#: classes/Resources/class-resources-ajax.php:54
+msgid "No file path!"
+msgstr ""
+
+#: classes/Rest/class-rest-register-fields.php:66
+#: classes/Rest/class-rest-register-fields.php:103
+msgid "You are not allowed to see this data"
+msgstr ""
+
+#: classes/Statuses/class-statuses-meta-boxes.php:46
+msgid "Status colour"
+msgstr ""
+
+#: classes/Statuses/class-statuses-meta-boxes.php:88
+msgid "Status color"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:34
+msgctxt "Post Type General Name"
+msgid "Event Statuses"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:35
+msgctxt "Post Type Singular Name"
+msgid "Event Status"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:36
+msgid "Event Statuses"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:37
+msgid "Parent Event Status"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:38
+msgid "Statuses"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:39
+msgid "View Event Statuses"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:40
+msgid "Add New Event Status"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:42
+msgid "Edit Event Status"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:43
+msgid "Update Event Status"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:44
+msgid "Search Event Status"
+msgstr ""
+
+#: classes/Statuses/class-statuses-register.php:51
+msgid "This is where events statuses are created."
+msgstr ""
+
+#: templates/nfc-events-log-filters.php:12
+msgid "Search for a product&hellip;"
+msgstr ""
+
+#: templates/nfc-events-log-filters.php:29
+msgid "Current or history"
+msgstr ""
+
+#: templates/nfc-events-log-filters.php:34
+msgid "Current events"
+msgstr ""
+
+#: templates/nfc-events-log-filters.php:35
+msgid "History"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:18
+msgid "No events found."
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:30
+msgid "ID"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:31
+msgid "Date created"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:33
+msgid "Product"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:34
+msgid "User details"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:54
+msgid "Event ID:"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:59
+msgid "Date:"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:64
+msgid "Status:"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:85
+#: templates/nfc-events-log-loop.php:114
+msgid "Name:"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:97
+msgid "Product ID:"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:102
+msgid "Status history"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:108
+msgid "User:"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:119
+msgid "ID:"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:138
+msgid "Comment:"
+msgstr ""
+
+#: templates/nfc-events-log-loop.php:154
+msgid "Files:"
+msgstr ""
+
+#: templates/nfc-events-user-roles.php:26
+msgid "Note: If no user roles are checked, all user roles will be allowed to view this page."
+msgstr ""
+
+#: templates/nfc-product-event-form.php:35
+msgid "Select status:"
+msgstr ""
+
+#: templates/nfc-product-event-form.php:62
+msgid "Leave comment:"
+msgstr ""
+
+#: templates/nfc-product-event-form.php:64
+msgid "Any message for us?"
+msgstr ""
+
+#: templates/nfc-product-event-form.php:68
+msgid "Upload photo:"
+msgstr ""
+
+#: templates/nfc-product-event-form.php:72
+msgid "Max 10MB per image"
+msgstr ""
+
+#: templates/nfc-product-event-form.php:74
+msgid "(png, jpg, jpeg)"
+msgstr ""
+
+#: templates/nfc-product-event-form.php:80
+msgid "Attach images"
+msgstr ""
+
+#: templates/nfc-product-event-form.php:89
+msgid "Submit post event"
+msgstr ""
+
+#: templates/nfc-product-not-logged-in-notice.php:15
+msgid "Sign In"
+msgstr ""
+
+#: templates/nfc-product-not-logged-in-notice.php:18
+msgid "Please login and you will be automatically redirected to NFC event page."
+msgstr ""
+
+#: templates/nfc-product-not-logged-in-notice.php:22
+msgid "Sign in to your account"
+msgstr ""
+
+#: templates/nfc-settings-export-events.php:16
+msgid "Number of events:"
+msgstr ""
+
+#: templates/nfc-settings-export-events.php:23
+msgid "Export Events"
+msgstr ""
+
+#: templates/nfc-settings-export-events.php:24
+#: templates/nfc-settings-export-tag-urls.php:36
+msgid "Done!"
+msgstr ""
+
+#: templates/nfc-settings-export-events.php:28
+#: templates/nfc-settings-export-tag-urls.php:41
+msgid "Export is complete. File is automatically downloaded!"
+msgstr ""
+
+#: templates/nfc-settings-export-tag-urls.php:14
+msgid "Select export post type"
+msgstr ""
+
+#: templates/nfc-settings-export-tag-urls.php:16
+msgid "Select post type"
+msgstr ""
+
+#: templates/nfc-settings-export-tag-urls.php:35
+msgid "Start Export"
+msgstr ""
+
+#: templates/nfc-settings-user-redirections.php:19
+#: templates/nfc-settings-user-redirections.php:41
+msgid "Select page"
+msgstr ""
+
+#: templates/nfc-settings-user-redirections.php:38
+msgid "Fallback:"
+msgstr ""
+
+#: templates/nfc-settings-user-redirections.php:57
+msgid "Note: User will be redirected to fallback page only when post ID does not exist or post/product is not yet published."
+msgstr ""
+
+#: blocks/components/StyleSelect.jsx:34
+#: build/blocks/product-event-index.js:1
+#: build/blocks/restricted-content-index.js:1
+msgid "No results"
+msgstr ""
+
+#: blocks/product-event/src/_edit.js:37
+#: build/blocks/product-event-index.js:1
+msgid "Preview the form for a user role"
+msgstr ""
+
+#: blocks/restricted-content/src/_edit.js:73
+#: build/blocks/restricted-content-index.js:11
+msgid "Restricted content block:"
+msgstr ""
+
+#: blocks/restricted-content/src/_edit.js:75
+#: build/blocks/restricted-content-index.js:11
+msgid "The content within this block will be available only for users you specify within block options."
+msgstr ""

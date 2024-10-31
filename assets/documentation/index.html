@@ -1,0 +1,699 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>User Documentation</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 690px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+</style></head><body><article id="ca46aaab-9f6b-4668-8aad-07d75cade470" class="page sans"><header><h1 class="page-title">User Documentation</h1></header><div class="page-body"><h1 id="f0807c08-ffce-432f-85c0-42b8ab029aca" class="">📎  NFC Events</h1><p id="c60a2278-4566-4c44-8525-be263d684f24" class=""><em>Create unique NFC product tag URLs, custom user roles, NFC pages and blocks, allow specific users to create events by scanning NFC tags, manage all events and their attachments and more.</em></p><h1 id="cde31f6f-0051-4714-b82c-c5cad30720ef" class=""><strong>Getting started</strong></h1><p id="59d39f24-ff8b-4f58-9b5b-4f7b0234b34e" class="">To install <strong>NFC Events</strong> plugin follow the following instructions.</p><ul id="66171286-e253-48dd-a28a-9ff57f1c6aed" class="bulleted-list"><li style="list-style-type:disc">In your WordPress admin panel, go to <strong>Plugins &gt; New Plugin</strong>, search for <strong>NFC Events</strong> and click <strong>“Install now”</strong> from the search results page.</li></ul><ul id="6cd1f9da-0705-463b-8261-3e3df5ed9da2" class="bulleted-list"><li style="list-style-type:disc">Alternatively, <a href="https://wordpress.org/plugins/">download the plugin from WordPress.org manually</a> and upload the contents of <strong>nfc-events.zip</strong> to your plugins directory.</li></ul><ul id="d53a3f8b-b4ce-4e4d-85ed-9cdbc7eafc08" class="bulleted-list"><li style="list-style-type:disc">Activate the plugin</li></ul><ul id="31e69327-40fd-4f57-91d5-b26ca2eb2cf4" class="bulleted-list"><li style="list-style-type:disc">Navigate to plugins settings page within WP Dashboard &gt; NFC Events &gt; Settings.</li></ul><ul id="3f290ca2-6cdf-4aae-885d-cd128a17b502" class="bulleted-list"><li style="list-style-type:disc">Export your NFC Tag URLs and you will then have a <strong>CSV file</strong> with all the products<strong> unique tag urls</strong>. You can then use those url’s straight away by using any of them within your browser or placing an url onto a tag and scan it with your mobile device.</li></ul><p id="4ac6bf25-df9c-4191-933b-0747cefa896f" class="">
+</p><hr id="21ba66b9-4b98-4e98-8345-6b5b4e735a9c"/><h1 id="c5de5965-1679-4391-9bdf-531649c762dd" class="">Redirection</h1><p id="d7139181-3fe2-4cb5-bbe8-bff505e81f06" class=""><strong>Not logged-in users</strong>
+Upon successful scan of NFC tag and its arrival on the site, user will be redirected to a product page where will be prompted with a notification popup to login. Upon successful login the user will be automatically redirected the same way as logged-in users described below.
+</p><p id="68b7197a-3e36-4097-81c5-7e14925bed9e" class=""><strong>Logged-in users</strong>
+Upon successful scan of NFC tag, user will be redirected to the specific NFC page based on his/her user role.</p><p id="c302832a-2b10-4c6f-b797-c1a51ff6951c" class="">
+</p><hr id="0ad960d9-0b70-4b38-9c98-d1081af47e93"/><h1 id="c502fddc-8db4-484d-b0bd-f65f6693c46e" class="">Creating an Event</h1><p id="1459e073-6dd1-40a9-91eb-e13de44217a8" class="">After user is redirected to the “Set event” page, the event form will be displayed where the user can submit an event with specific status, leave a comment and attach files/images.</p><p id="525cf4ee-1805-45d3-b2f2-ffbba9bcf34d" class="">Upon submitting the event form, an event is created within WP dashboard with all the details from the form such as:</p><ul id="345755c5-1bb3-44cc-a572-dd8a6aea36f3" class="bulleted-list"><li style="list-style-type:disc">Product ID (from which we can get product name and all other details)</li></ul><ul id="4d77098f-b420-4421-8392-059e621275e5" class="bulleted-list"><li style="list-style-type:disc">Chosen status (washing or damaged etc.)</li></ul><ul id="262b2e7e-ac7e-4e03-85ee-31dd706f216e" class="bulleted-list"><li style="list-style-type:disc">User ID (from which we can get all user information such as its role, email address etc.)</li></ul><ul id="cf7c8ca3-ba00-48c3-8683-1082dd1573ce" class="bulleted-list"><li style="list-style-type:disc">Date and time of form submission.</li></ul><ul id="a71a3e13-0b46-465c-b5db-f9af4c1b830b" class="bulleted-list"><li style="list-style-type:disc">Any attachments (if any were submitted).</li></ul><p id="666a21a4-4397-44da-b5f7-5add55b8f6bf" class="">
+</p><hr id="bacac7d0-884e-4287-bc63-ecf4a1861a55"/><figure id="40583400-1c66-44dd-a66d-71cd215e5722" class="image"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_15.21.58.png"><img style="width:1356px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_15.21.58.png"/></a></figure><p id="3e75a47f-970c-47b8-8c38-6206a2d38104" class="">
+</p><figure id="9e5a0b51-08c9-4b58-b5e9-286a1a6e1147" class="image"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_15.36.15.png"><img style="width:1202px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_15.36.15.png"/></a></figure><p id="4cbf8c5d-67a2-4174-b4f4-320ffb6a9d04" class="">
+</p><figure id="676093c5-bd60-492a-b0e9-91bd6264312a" class="image"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_15.38.58.png"><img style="width:1245px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_15.38.58.png"/></a></figure><p id="1840f556-7f38-4e98-a099-80b89ad60a13" class="">
+</p><hr id="67715b8d-6bea-43c1-9932-17d9667da4bb"/><h1 id="abde9490-aabb-48eb-999b-c93f123edde7" class="">Create User Roles</h1><p id="78dcfacf-a11e-48ac-aee3-2f35594a8b2a" class="">The NFC plugin has the ability to create custom roles and also archive any of them for later use and to delete previously created ones.</p><p id="9dd34331-dbe1-44df-a850-2f482d003535" class="">Within dashboard navigate to NFC Events &gt; Settings &gt; Roles:
+</p><p id="ee9a4ed5-0baf-4142-a167-b24d0b293388" class="">The NFC plugin has the ability to create custom roles and also archive any of them for later use and to delete previously created ones.</p><p id="93c4a2b8-2fc9-4c20-b981-b3d2e20f1f6e" class="">Within dashboard navigate to NFC Events &gt; Settings &gt; Roles:</p><p id="fba3af42-c89e-4dc1-9a84-4b2c32922f23" class="">
+</p><figure id="a1f479fb-0880-4722-af85-016dc1c93c80" class="image"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_15.52.51.png"><img src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_15.52.51.png"/></a></figure><p id="a090c966-ea4f-4fef-b90a-865218629425" class="">
+</p><p id="49457e5a-87c0-4824-88a4-6bc617e650dc" class="">These custom user roles then can be used within Event Statuses to limit which status can be available for which user role. For example “Warehouse” user role can have only “Washing” and “Returned” statuses which mean when the user with a role of “Warehouse” logs into the site and tries to submit an event form they will only have a choice between those two statuses.</p><p id="267edb01-f629-4b34-a9a1-213e72ff4bba" class="">
+</p><hr id="41ddf5ab-94cd-4ab7-b536-6dbb518c0817"/><h1 id="a1ef2e87-5341-45f1-b8ad-ebc928379805" class="">Create User Pages</h1><p id="44f81cfa-e655-4b97-8aaa-18a37d4f23d1" class="">The NFC plugin has the ability to create custom NFC pages that can be used within NFC settings to set specific pages for different user roles. Those users can be redirected to those specified pages upon NFC tag scan.</p><p id="f6b4d6a9-0e4b-4cc8-ac73-ed2ba29c3cc8" class="">To create an NFC page navigate to <strong>NFC Events &gt; Pages &gt; Add new.</strong></p><p id="446114ca-ec66-40a7-a878-82994c1af641" class="">NFC pages can contain any kind of content (blocks) but you will probably use some of the NFC blocks such as: NFC product title, product image, event form etc.</p><p id="f09f7f61-474d-42d5-bac3-58cc42caf4c5" class="">To set which user role will be redirected to which page, navigate to
+<strong>NFC Events &gt; Settings &gt; Redirections:</strong></p><p id="e3e7e0dd-f2c9-43ec-9188-2d8941a307d1" class="">
+</p><figure id="5bb2d09e-ecda-4d45-9f6f-6a9042e62c6a" class="image"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.52.20.png"><img style="width:2524px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.52.20.png"/></a></figure><p id="75de6d2e-b774-47bb-b122-e212563098f6" class="">
+</p><p id="a9bdcb87-1041-4866-b626-bb672e025413" class="">
+</p><hr id="8916f1d4-cee3-4098-aa22-462feeca5a3a"/><h1 id="473f9ca4-8606-4691-bfbc-c357cc672d9f" class="">Add Blocks to User Pages</h1><p id="4ae0610d-c48f-4258-b8c9-62f6e748af2d" class="">With NFC plugin you get access to NFC blocks which you can use within NFC pages or regular WordPress pages or posts. You can find all the NFC blocks within Gutenberg page build block inserter.</p><p id="b34bd9c0-6f05-4bfe-8b6d-fcf5299cc68d" class="">To add a NFC block, as any other block, within Gutenberg editor you can click on the + icon to display the block search box and type in “NFC”. All the NFC blocks will be displayed after few seconds and you can add any of them with a simple click.
+ </p><figure id="55790244-17e0-4301-a226-c3147738342d" class="image"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.58.18.png"><img style="width:384px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.58.18.png"/></a></figure><p id="a6e07bb9-48a0-4bce-99b3-ec7792708f19" class="">
+</p><hr id="dcccba79-8ece-4138-a80d-4c7c88601749"/><h1 id="5b9dbb34-9c8c-4ac2-9f5f-571be20b1f6b" class="">Set restrictions</h1><p id="33c3ff17-7224-42cc-aeb7-c84c9c805c38" class="">NFC pages can be restricted for specific user roles only.
+Within each NFC page, on the right side panel you will find “Allowed user roles” settings fields for you to select which user roles are allowed to view the page.</p><p id="6db7abb8-abf2-4885-85c8-471780df192a" class=""><em>If no user roles are selected, the page will be available for all.</em></p><p id="c121f4ac-d7e8-491f-a1ee-e225354a7c03" class=""><em>In a case when for some reason a not-allowed user comes to the page url, they will be redirected to the home page instead.</em></p><p id="e900aa34-68e1-4ae5-833b-afb999e7facc" class="">
+</p><figure id="7a06a613-4bc6-4d02-9ca8-ea42827c9a7b" class="image" style="text-align:left"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.54.47.png"><img style="width:336px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.54.47.png"/></a></figure><p id="8737611d-1c90-4268-bc0d-5dc4dedfedb2" class="">
+</p><p id="827faa54-4b95-4859-b555-482c1740b1c1" class="">The NFC plugin also has a block called “Restricted content” which allows you to wrap any kind of content inside it and specify that only certain users can view its content.</p><div id="e4141060-3fd9-4b05-a652-abe3115702bc" class="column-list"><div id="f53c1c9c-abd9-47b7-9b9d-f885ff483a6e" style="width:50%" class="column"><figure id="bad2d7c4-7694-4b90-8b22-75cffd163669" class="image" style="text-align:left"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.58.18%201.png"><img style="width:288px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.58.18%201.png"/></a></figure><p id="03389a4c-c097-46db-9c67-a54412687f4b" class="">
+</p></div><div id="2255b507-553a-43a2-b103-cb74919565ed" style="width:50%" class="column"><figure id="73ff7fa2-3aa8-4237-9d72-3b08b975f229" class="image"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.58.50.png"><img style="width:240px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2022-12-28_at_21.58.50.png"/></a></figure></div></div><p id="378f1015-2bc1-4975-b569-84a563dd2402" class="">
+</p><hr id="4362c257-bbd3-4e1f-a3e3-2aa024a5e927"/><h1 id="004898eb-4ce3-482f-b3f7-77344feced90" class="">Event form block preview as other user role</h1><p id="34f0feaa-b59c-43c9-a882-0d5bbad1b9d3" class="">
+</p><p id="f2c7463c-30fd-4873-97c7-763d997e8afd" class="">The “NFC Product Event” block has and option to preview it as some other user role then yours.
+To do this, navigate to any NFC page within WP dashboard and if you already have the block present on that page, click on the block and if not then simply add “NFC Product Event” block to that page.</p><p id="617d5145-bf5d-40bc-8b00-e9ea8cc157b0" class="">Clicking on the block with display the block options on the right side panel:</p><figure id="68135f94-faf1-4c8f-ae5b-238e2676b562" class="image"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2023-01-30_at_12.23.52.png"><img style="width:1193px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2023-01-30_at_12.23.52.png"/></a></figure><p id="37c7a611-5a1e-421c-b7e2-bef713be40a6" class="">
+</p><p id="f77e10c5-1a39-48d1-a268-07439a7e39aa" class="">Click on the “Preview the form as user role” dropdown and choose the role.</p><p id="0e468bdf-aa25-423d-a826-5a6f1ead9110" class="">
+</p><figure id="4bfe169c-98ee-49c2-b846-fb414420e553" class="image" style="text-align:left"><a href="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2023-01-30_at_12.25.31.png"><img style="width:284px" src="User%20Documentation%20ca46aaab9f6b46688aad07d75cade470/Screenshot_2023-01-30_at_12.25.31.png"/></a></figure><p id="f6cc5909-22cb-4350-89fd-c05d61475ec3" class="">
+</p><p id="7f61cd86-e456-4d42-8a5d-069883e42e3d" class="">The form will then display as that user role will see it. The statuses will change according to what that specific user role can have. For example the “Repairman” user role can have statuses “Returned and Washing” only.
+This option exists only for site admin/shop manager to use in order to check which statuses the form will show for different user roles.</p></div></article></body></html>

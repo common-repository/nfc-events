@@ -1,0 +1,30 @@
+.nfc-product-img {
+
+	img {
+		border-radius: 6px;
+	}
+
+	&.--no-img {
+		position: relative;
+		display: block;
+		width: 100%;
+		min-height: 400px;
+		background-color: var(--nfc-color--light-grey);
+		border-radius: 6px;
+
+		&::after {
+			content: '';
+			position: absolute;
+			display: block;
+			top: calc(50% - 37px);
+			background-image: url(#{$imagePath}/image.svg);
+			background-repeat: no-repeat;
+			background-size: 75px;
+			background-position: center;
+			width: 100%;
+			height: 75px;
+			text-align: center;
+			opacity: .1;
+		}
+	}
+}

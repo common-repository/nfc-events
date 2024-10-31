@@ -1,0 +1,700 @@
+# Translation of NFC Events in Swedish
+# This file is distributed under the same license as the NFC Events package.
+msgid ""
+msgstr ""
+"Project-Id-Version: NFC Events\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2023-04-10 15:01+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv_SE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: blocks/restricted-content/src/_edit.js:75
+#: build/blocks/restricted-content-index.js:11
+msgid "The content within this block will be available only for users you specify within block options."
+msgstr "Innehållet i detta block kommer endast att vara tillgängligt för användare som du anger inom blockalternativ."
+
+#: blocks/restricted-content/src/_edit.js:73
+#: build/blocks/restricted-content-index.js:11
+msgid "Restricted content block:"
+msgstr "Begränsat innehållsblock:"
+
+#: blocks/product-event/src/_edit.js:37 build/blocks/product-event-index.js:1
+msgid "Preview the form for a user role"
+msgstr "Förhandsgranska formuläret för en användarroll"
+
+#: blocks/components/StyleSelect.jsx:34 build/blocks/product-event-index.js:1
+#: build/blocks/restricted-content-index.js:1
+msgid "No results"
+msgstr "Inga resultat"
+
+#: templates/nfc-settings-user-redirections.php:57
+msgid "Note: User will be redirected to fallback page only when post ID does not exist or post/product is not yet published."
+msgstr "Obs: Användaren omdirigeras till reservsidan endast när inläggs-ID inte finns eller inlägg/produkt ännu inte har publicerats."
+
+#: templates/nfc-settings-user-redirections.php:38
+msgid "Fallback:"
+msgstr "Retirera:"
+
+#: templates/nfc-settings-user-redirections.php:19
+#: templates/nfc-settings-user-redirections.php:41
+msgid "Select page"
+msgstr "Välj sida"
+
+#: templates/nfc-settings-export-tag-urls.php:35
+msgid "Start Export"
+msgstr "Starta export"
+
+#: templates/nfc-settings-export-tag-urls.php:16
+msgid "Select post type"
+msgstr "Välj inläggstyp"
+
+#: templates/nfc-settings-export-tag-urls.php:14
+msgid "Select export post type"
+msgstr "Välj exportinläggstyp"
+
+#: templates/nfc-settings-export-events.php:28
+#: templates/nfc-settings-export-tag-urls.php:41
+msgid "Export is complete. File is automatically downloaded!"
+msgstr "Exporten är klar. Filen laddas ner automatiskt!"
+
+#: templates/nfc-settings-export-events.php:24
+#: templates/nfc-settings-export-tag-urls.php:36
+msgid "Done!"
+msgstr "Gjort!"
+
+#: templates/nfc-settings-export-events.php:23
+msgid "Export Events"
+msgstr "Exportera händelser"
+
+#: templates/nfc-settings-export-events.php:16
+msgid "Number of events:"
+msgstr "Antal händelser:"
+
+#: templates/nfc-product-not-logged-in-notice.php:22
+msgid "Sign in to your account"
+msgstr "Logga in på ditt konto"
+
+#: templates/nfc-product-not-logged-in-notice.php:18
+msgid "Please login and you will be automatically redirected to NFC event page."
+msgstr "Logga in så kommer du automatiskt att omdirigeras till NFC-händelsesidan."
+
+#: templates/nfc-product-not-logged-in-notice.php:15
+msgid "Sign In"
+msgstr "Logga in"
+
+#: templates/nfc-product-event-form.php:89
+msgid "Submit post event"
+msgstr "Skicka inläggshändelser"
+
+#: templates/nfc-product-event-form.php:80
+msgid "Attach images"
+msgstr "Bifoga bilder"
+
+#: templates/nfc-product-event-form.php:74
+msgid "(png, jpg, jpeg)"
+msgstr "(png, jpg, jpeg)"
+
+#: templates/nfc-product-event-form.php:72
+msgid "Max 10MB per image"
+msgstr "Max 10MB per bild"
+
+#: templates/nfc-product-event-form.php:68
+msgid "Upload photo:"
+msgstr "Ladda upp foto:"
+
+#: templates/nfc-product-event-form.php:64
+msgid "Any message for us?"
+msgstr "Något meddelande till oss?"
+
+#: templates/nfc-product-event-form.php:62
+msgid "Leave comment:"
+msgstr "Lämna kommentar:"
+
+#: templates/nfc-product-event-form.php:35
+msgid "Select status:"
+msgstr "Välj status:"
+
+#: templates/nfc-events-user-roles.php:26
+msgid "Note: If no user roles are checked, all user roles will be allowed to view this page."
+msgstr "Obs: Om inga användarroller är markerade kommer alla användarroller att tillåtas se den här sidan."
+
+#: templates/nfc-events-log-loop.php:154
+msgid "Files:"
+msgstr "Filer:"
+
+#: templates/nfc-events-log-loop.php:138
+msgid "Comment:"
+msgstr "Kommentar:"
+
+#: templates/nfc-events-log-loop.php:119
+msgid "ID:"
+msgstr "ID:"
+
+#: templates/nfc-events-log-loop.php:108
+msgid "User:"
+msgstr "Användare:"
+
+#: templates/nfc-events-log-loop.php:102
+msgid "Status history"
+msgstr "Statushistorik"
+
+#: templates/nfc-events-log-loop.php:97
+msgid "Product ID:"
+msgstr "Serienummer:"
+
+#: templates/nfc-events-log-loop.php:85 templates/nfc-events-log-loop.php:114
+msgid "Name:"
+msgstr "Namn:"
+
+#: templates/nfc-events-log-loop.php:64
+msgid "Status:"
+msgstr "Status:"
+
+#: templates/nfc-events-log-loop.php:59
+msgid "Date:"
+msgstr "Datum:"
+
+#: templates/nfc-events-log-loop.php:54
+msgid "Event ID:"
+msgstr "Händelse-ID:"
+
+#: templates/nfc-events-log-loop.php:34
+msgid "User details"
+msgstr "Användarinformation"
+
+#: templates/nfc-events-log-loop.php:33
+msgid "Product"
+msgstr "Produkt"
+
+#: templates/nfc-events-log-loop.php:31
+msgid "Date created"
+msgstr "Skapat datum"
+
+#: templates/nfc-events-log-loop.php:30
+msgid "ID"
+msgstr "ID"
+
+#: templates/nfc-events-log-loop.php:18
+msgid "No events found."
+msgstr "Inga händelser hittades."
+
+#: templates/nfc-events-log-filters.php:35
+msgid "History"
+msgstr "Historia"
+
+#: templates/nfc-events-log-filters.php:34
+msgid "Current events"
+msgstr "Aktuella händelser"
+
+#: templates/nfc-events-log-filters.php:29
+msgid "Current or history"
+msgstr "Aktuell eller historia"
+
+#: templates/nfc-events-log-filters.php:12
+msgid "Search for a product&hellip;"
+msgstr "Sök efter en produkt&hellip;"
+
+#: classes/Statuses/class-statuses-register.php:51
+msgid "This is where events statuses are created."
+msgstr "Det är här händelsestatus skapas."
+
+#: classes/Statuses/class-statuses-register.php:44
+msgid "Search Event Status"
+msgstr "Sök händelsestatus"
+
+#: classes/Statuses/class-statuses-register.php:43
+msgid "Update Event Status"
+msgstr "Uppdatera händelsestatus"
+
+#: classes/Statuses/class-statuses-register.php:42
+msgid "Edit Event Status"
+msgstr "Redigera händelsestatus"
+
+#: classes/Statuses/class-statuses-register.php:40
+msgid "Add New Event Status"
+msgstr "Lägg till ny händelsestatus"
+
+#: classes/Statuses/class-statuses-register.php:39
+msgid "View Event Statuses"
+msgstr "Visa händelsestatus"
+
+#: classes/Statuses/class-statuses-register.php:38
+msgid "Statuses"
+msgstr "Statuser"
+
+#: classes/Statuses/class-statuses-register.php:37
+msgid "Parent Event Status"
+msgstr "Status för överordnad händelse"
+
+#: classes/Statuses/class-statuses-register.php:36
+msgid "Event Statuses"
+msgstr "Händelsestatus"
+
+#: classes/Statuses/class-statuses-register.php:35
+msgctxt "Post Type Singular Name"
+msgid "Event Status"
+msgstr "Händelsestatus"
+
+#: classes/Statuses/class-statuses-register.php:34
+msgctxt "Post Type General Name"
+msgid "Event Statuses"
+msgstr "Händelsestatus"
+
+#: classes/Statuses/class-statuses-meta-boxes.php:88
+msgid "Status color"
+msgstr "Statusfärg"
+
+#: classes/Statuses/class-statuses-meta-boxes.php:46
+msgid "Status colour"
+msgstr "Statusfärg"
+
+#: classes/Rest/class-rest-register-fields.php:66
+#: classes/Rest/class-rest-register-fields.php:103
+msgid "You are not allowed to see this data"
+msgstr "Du får inte se denna data"
+
+#: classes/Resources/class-resources-ajax.php:54
+msgid "No file path!"
+msgstr "Ingen filsökväg!"
+
+#. translators: %1$s: offset from, %2$s: offset to, %3$s: number of total files
+#: classes/Resources/class-resources-admin.php:161
+msgid "Showing: %1$s-%2$s of %3$s files"
+msgstr "Visar: %1$s-%2$s av %3$s filer"
+
+#: classes/Resources/class-resources-admin.php:152
+msgid "Here you can find all the files related to your events. Click on item to view/download or click the X button to delete the item."
+msgstr "Här kan du hitta alla filer relaterade till dina händelser. Klicka på objektet för att visa/ladda ner eller klicka på X-knappen för att ta bort objektet."
+
+#: classes/Resources/class-resources-admin.php:147
+msgid "You have no files currently."
+msgstr "Du har inga filer för närvarande."
+
+#: classes/Resources/class-resources-admin.php:141
+#: templates/nfc-events-log-filters.php:53
+msgid "Filter"
+msgstr "Filtrera"
+
+#: classes/Resources/class-resources-admin.php:125
+msgid "All types"
+msgstr "Alla typer"
+
+#: classes/Resources/class-resources-admin.php:122
+msgid "Product name or ID"
+msgstr "Produktnamn eller ID"
+
+#: classes/Resources/class-resources-admin.php:36
+#: classes/Resources/class-resources-admin.php:37
+#: classes/Resources/class-resources-admin.php:54
+msgid "Resources"
+msgstr "Resurser"
+
+#: classes/Products/class-products-meta-boxes.php:64
+msgid "Events Log"
+msgstr "Händelselogg"
+
+#: classes/Products/class-products-fields.php:52
+#: classes/Products/class-products-fields.php:104
+msgid "Set total amount of your products (all product on stock and those that are currently rented)."
+msgstr "Ange totala mängden av dina produkter (alla produkter på lager och de som för närvarande är uthyrda)."
+
+#: classes/Products/class-products-fields.php:44
+#: classes/Products/class-products-fields.php:100
+msgid "NFC Events Settings"
+msgstr "Inställningar för NFC-händelser"
+
+#: classes/Pages/class-pages-register.php:51
+msgid "This is where NFC pages are stored."
+msgstr "Det är här NFC-sidorna lagras."
+
+#: classes/Pages/class-pages-register.php:44
+msgid "Search Page"
+msgstr "Söksida"
+
+#: classes/Pages/class-pages-register.php:43
+msgid "Update Page"
+msgstr "Uppdatera sidan"
+
+#: classes/Pages/class-pages-register.php:42
+msgid "Edit Page"
+msgstr "Redigera sida"
+
+#: classes/Pages/class-pages-register.php:40
+msgid "Add New Page"
+msgstr "Lägg till ny sida"
+
+#: classes/Pages/class-pages-register.php:39
+msgid "View Page"
+msgstr "Visa sida"
+
+#: classes/Pages/class-pages-register.php:37
+msgid "Parent Page"
+msgstr "Föräldrasida"
+
+#: classes/Pages/class-pages-register.php:36
+#: classes/Pages/class-pages-register.php:38
+msgid "Pages"
+msgstr "Sidor"
+
+#: classes/Pages/class-pages-register.php:35
+msgctxt "Post Type Singular Name"
+msgid "Page"
+msgstr "Sida"
+
+#: classes/Pages/class-pages-register.php:34
+msgctxt "Post Type General Name"
+msgid "Pages"
+msgstr "Sidor"
+
+#: classes/Pages/class-pages-meta-boxes.php:39
+#: classes/Statuses/class-statuses-meta-boxes.php:39
+#: blocks/restricted-content/src/_edit.js:57
+#: build/blocks/restricted-content-index.js:11
+msgid "Allowed user roles"
+msgstr "Tillåtna användarroller"
+
+#. translators: %s: Size of the file
+#: classes/Helpers/class-helpers.php:95
+msgid "Event post could not be inserted!"
+msgstr "Eventposten kunde inte infogas!"
+
+#. translators: %s: Size of the file
+#: classes/Helpers/class-helpers.php:71
+msgid "Error uploading image: %s"
+msgstr "Fel vid uppladdning av bild: %s"
+
+#. translators: %s: Size of the file
+#: classes/Helpers/class-helpers.php:50
+msgid "Image %s is too large!"
+msgstr "Bilden %s är för stor!"
+
+#: classes/Helpers/class-helpers-user.php:54
+msgid "No such user"
+msgstr "Ingen sådan användare"
+
+#: classes/Export/class-export-csv.php:75
+msgid "Click here to download the file."
+msgstr "Klicka här för att ladda ner filen."
+
+#: classes/Export/class-export-csv.php:75
+msgid "Export complete."
+msgstr "Exporten klar."
+
+#: classes/Export/class-export-csv.php:65
+msgid "Error, No product with this post type!"
+msgstr "Fel, ingen produkt med denna inläggstyp!"
+
+#: classes/Export/class-export-csv.php:52
+msgid "Select one of the post types."
+msgstr "Välj en av inläggstyperna."
+
+#: classes/Events/class-events-register.php:51
+msgid "This is where post events are stored."
+msgstr "Det är här posthändelser lagras."
+
+#: classes/Events/class-events-register.php:46
+#: classes/Pages/class-pages-register.php:46
+#: classes/Statuses/class-statuses-register.php:46
+msgid "Not found in Trash"
+msgstr "Hittade inte i papperskorgen"
+
+#: classes/Events/class-events-register.php:45
+#: classes/Pages/class-pages-register.php:45
+#: classes/Statuses/class-statuses-register.php:45
+msgid "Not Found"
+msgstr "Hittades inte"
+
+#: classes/Events/class-events-register.php:44
+msgid "Search Event"
+msgstr "Sök händelse"
+
+#: classes/Events/class-events-register.php:43
+msgid "Update Event"
+msgstr "Uppdatera händelse"
+
+#: classes/Events/class-events-register.php:42
+msgid "Edit Event"
+msgstr "Redigera händelse"
+
+#: classes/Events/class-events-register.php:41
+#: classes/Pages/class-pages-register.php:41
+#: classes/Statuses/class-statuses-register.php:41
+msgid "Add New"
+msgstr "Lägg till ny"
+
+#: classes/Events/class-events-register.php:40
+msgid "Add New Event"
+msgstr "Lägg till ny händelse"
+
+#: classes/Events/class-events-register.php:39
+msgid "View Event"
+msgstr "Visa händelse"
+
+#: classes/Events/class-events-register.php:37
+msgid "Parent Event"
+msgstr "Föräldrahändelser"
+
+#: classes/Events/class-events-register.php:36
+#: classes/Events/class-events-register.php:38
+msgid "Events"
+msgstr "Händelser"
+
+#: classes/Events/class-events-register.php:35
+msgctxt "Post Type Singular Name"
+msgid "Event"
+msgstr "Händelse"
+
+#: classes/Events/class-events-register.php:34
+msgctxt "Post Type General Name"
+msgid "Events"
+msgstr "Händelser"
+
+#: classes/Events/class-events-meta-boxes.php:150
+#: templates/nfc-events-log-loop.php:36
+msgid "Files"
+msgstr "Filer"
+
+#: classes/Events/class-events-meta-boxes.php:132
+#: templates/nfc-events-log-loop.php:35
+msgid "Comment"
+msgstr "Kommentar"
+
+#: classes/Events/class-events-meta-boxes.php:123
+#: templates/nfc-events-log-loop.php:129
+msgid "Email:"
+msgstr "E-post:"
+
+#: classes/Events/class-events-meta-boxes.php:118
+#: templates/nfc-events-log-loop.php:124
+msgid "Role:"
+msgstr "Roll:"
+
+#: classes/Events/class-events-meta-boxes.php:114
+msgid "User ID:"
+msgstr "Användar ID:"
+
+#: classes/Events/class-events-meta-boxes.php:107
+msgid "User data"
+msgstr "Användardata"
+
+#: classes/Events/class-events-meta-boxes.php:100
+#: templates/nfc-events-log-loop.php:92
+msgid "Unique:"
+msgstr "Unik:"
+
+#: classes/Events/class-events-meta-boxes.php:93
+#: templates/nfc-events-log-loop.php:82
+msgid "Product:"
+msgstr "Produkt:"
+
+#: classes/Events/class-events-meta-boxes.php:75
+msgid "Event status:"
+msgstr "Händelsestatus:"
+
+#: classes/Events/class-events-meta-boxes.php:68
+msgid "Date created:"
+msgstr "Skapat datum:"
+
+#: classes/Events/class-events-meta-boxes.php:65
+msgid "General"
+msgstr "Allmän"
+
+#: classes/Events/class-events-meta-boxes.php:61
+msgid "Event #"
+msgstr "Händelse #"
+
+#: classes/Events/class-events-meta-boxes.php:39
+msgid "Event Data"
+msgstr "Händelsedata"
+
+#: classes/Events/class-events-columns.php:37
+msgid "Unique"
+msgstr "Unik"
+
+#: classes/Events/class-events-columns.php:36
+#: templates/nfc-events-log-loop.php:32
+msgid "Status"
+msgstr "Status"
+
+#: classes/Events/class-events-bulk-actions.php:97
+msgid "To export all events, navigate to NFC Events > Settings > Export."
+msgstr "För att exportera alla händelser, navigera till NFC-händelser &gt; Inställningar &gt; Exportera."
+
+#: classes/Events/class-events-bulk-actions.php:92
+msgid "Download again"
+msgstr "Ladda ner igen"
+
+#. translators: %d: number of posts
+#: classes/Events/class-events-bulk-actions.php:88
+msgid "Exported %d events."
+msgstr "Exporterade %d händelser."
+
+#: classes/Events/class-events-bulk-actions.php:78
+msgid "Error during creation of events raw data!"
+msgstr "Fel under skapandet av rådata för händelser!"
+
+#: classes/Events/class-events-ajax.php:94
+msgid "Thank you, the event is received!"
+msgstr "Tack, eventet är mottaget!"
+
+#: classes/Events/class-events-ajax.php:73
+#: classes/Resources/class-resources-ajax.php:67
+msgid "Something went wrong! Please try later again."
+msgstr "Något gick fel! Försök senare igen."
+
+#: classes/Events/class-events-ajax.php:54
+msgid "Select one of the events."
+msgstr "Välj en av händelserna."
+
+#: classes/Events/class-events-ajax.php:40
+#: classes/Export/class-export-csv.php:39
+#: classes/Resources/class-resources-ajax.php:40
+msgid "No nonce!"
+msgstr "Ingen nonce!"
+
+#: classes/Blocks/class-shortcodes.php:146
+msgid "You need to be logged in to view events log!"
+msgstr "Du måste vara inloggad för att se händelseloggen!"
+
+#: classes/Blocks/class-shortcodes.php:117
+msgid "Error! Wrong post ID!"
+msgstr "Fel! Fel inläggs-ID!"
+
+#: classes/Blocks/class-shortcodes.php:105
+msgid "Error! Nonce failed or no post ID passed!"
+msgstr "Fel! Nonce misslyckades eller inget inläggs-ID passerat!"
+
+#: classes/Blocks/class-shortcodes.php:62
+msgid "Product title"
+msgstr "Produktens titel"
+
+#: classes/Blocks/class-patterns.php:46
+msgid "Event form blocks pattern"
+msgstr "Händelse form block mönster"
+
+#: classes/Admin/class-admin-settings.php:361
+msgid "Currently you have no events, export is disabled!"
+msgstr "För närvarande har du inga händelser, exporten är inaktiverad!"
+
+#: classes/Admin/class-admin-settings.php:333
+msgid "You have no post types, export is disabled right now!"
+msgstr "Du har inga inläggstyper, exporten är inaktiverad just nu!"
+
+#: classes/Admin/class-admin-settings.php:321
+msgid "Easily export all NFC tag url's or all of your event posts into CSV files."
+msgstr "Exportera enkelt alla NFC-taggar-url:s eller alla dina händelsersinlägg till CSV-filer."
+
+#: classes/Admin/class-admin-settings.php:309
+msgid "Delete"
+msgstr "Radera"
+
+#: classes/Admin/class-admin-settings.php:302
+msgid "Unarchive"
+msgstr "Avarkivera"
+
+#: classes/Admin/class-admin-settings.php:301
+msgid "Archive"
+msgstr "Arkiv"
+
+#: classes/Admin/class-admin-settings.php:284
+msgid "Select capabilities"
+msgstr "Välj funktioner"
+
+#: classes/Admin/class-admin-settings.php:282
+msgid "Select user capabilities"
+msgstr "Välj användaregenskaper"
+
+#: classes/Admin/class-admin-settings.php:280
+msgid "Name"
+msgstr "Namn"
+
+#: classes/Admin/class-admin-settings.php:261
+msgid "Create role +"
+msgstr "Skapa roll +"
+
+#: classes/Admin/class-admin-settings.php:229
+msgid "Create, archive or remove custom user roles."
+msgstr "Skapa, arkivera eller ta bort anpassade användarroller."
+
+#: classes/Admin/class-admin-settings.php:194
+msgid "Select pages for available user roles. Logged in user with these roles will be redirected to their selected pages."
+msgstr "Välj sidor för tillgängliga användarroller. Inloggad användare med dessa roller kommer att omdirigeras till sina valda sidor."
+
+#: classes/Admin/class-admin-settings.php:181
+msgid "Export events"
+msgstr "Exportera händelser"
+
+#: classes/Admin/class-admin-settings.php:173
+msgid "Export tag url's"
+msgstr "Exportera taggars webbadresser"
+
+#: classes/Admin/class-admin-settings.php:153
+msgid "Add NFC user roles"
+msgstr "Lägg till NFC-användarroller"
+
+#: classes/Admin/class-admin-settings.php:146
+msgid "User Roles"
+msgstr "Användarroller"
+
+#: classes/Admin/class-admin-settings.php:133
+msgid "User pages"
+msgstr "Användarsidor"
+
+#: classes/Admin/class-admin-settings.php:126
+msgid "User Redirection"
+msgstr "Användaromdirigering"
+
+#: classes/Admin/class-admin-settings.php:77
+#: classes/Admin/class-admin-settings.php:166
+#: classes/Events/class-events-bulk-actions.php:40
+msgid "Export"
+msgstr "Exportera"
+
+#: classes/Admin/class-admin-settings.php:76
+msgid "Roles"
+msgstr "Roller"
+
+#: classes/Admin/class-admin-settings.php:75
+msgid "Redirections"
+msgstr "Omdirigeringar"
+
+#: classes/Admin/class-admin-settings.php:50
+#: classes/Admin/class-admin-settings.php:51
+msgid "Settings"
+msgstr "Inställningar"
+
+#: classes/Admin/class-admin-links.php:39
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: classes/Admin/class-admin-filters.php:67
+#: templates/nfc-events-log-filters.php:39
+msgid "All statuses"
+msgstr "Alla statusar"
+
+#. Author of the plugin
+msgid "Maksimer"
+msgstr "Maksimer"
+
+#. Description of the plugin
+msgid "Create unique NFC product tag URLs, custom user roles, NFC pages and blocks, allow specific users to create events by scanning NFC tags, manage all events and  more."
+msgstr "Skapa unika URL-adresser för NFC-produkttaggar, anpassade användarroller, NFC-sidor och block, låt specifika användare skapa händelser genom att skanna NFC-taggar, hantera alla händelser och mer."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://maksimer.com"
+msgstr "https://maksimer.com"
+
+#. Plugin Name of the plugin
+#: classes/Admin/class-admin-settings.php:39
+#: classes/Admin/class-admin-settings.php:40
+#: classes/Admin/class-admin-settings.php:69
+#: classes/Blocks/class-patterns.php:39
+msgid "NFC Events"
+msgstr "NFC Händelser"

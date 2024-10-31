@@ -1,0 +1,240 @@
+@import "select2/dist/css/select2.min.css";
+
+.wp-block-nfc-events-events-log {
+	padding: 0 15px;
+
+	@media (min-width: 1250px) {
+		padding: initial;
+	}
+}
+
+.nfc-events-log-filters {
+	text-align: left;
+	margin-bottom: 20px;
+
+	select {
+		font-size: 14px;
+		text-align: left;
+		background-position: 90% 52%;
+		background-color: transparent;
+		border-radius: 4px;
+		margin-right: 10px;
+		padding: 6px 32px 6px 13px;
+	}
+
+	.select2-search__field {
+		background-color: transparent;
+		width: 100%;
+		font-size: 15px;
+		height: 21px;
+		margin: 0 0 2px 4px !important;
+	}
+
+	.select2-selection__choice__display {
+		font-size: 12px;
+	}
+
+	.nfc-product-search {
+		height: 37px;
+		min-width: 250px;
+
+		+ .select2 {
+			.selection {
+				> .select2-selection {
+					min-height: 37px;
+					background-color: transparent;
+					border: 1px solid #eee;
+					padding: 1px 10px 6px;
+					font-size: 14px;
+
+					.select2-selection__rendered {
+						margin-left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+body > .select2-container {
+	margin-top: 32px;
+
+	.select2-dropdown {
+		border-color: var(--nfc-color--border) !important;
+
+		li {
+			font-size: 14px;
+			padding-left: 15px;
+		}
+	}
+}
+
+.nfc-events-log {
+	font-size: 13px;
+	line-height: 1.6;
+
+	.nfc-events-log-header {
+		display: none;
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+		background-color: var(--nfc-color--light-grey);
+		margin-bottom: 10px;
+		padding: 3px 20px;
+		border-radius: 6px;
+		color: var(--nfc-color--dark);
+		font-size: 14px;
+
+		@media (min-width: 1250px) {
+			display: grid;
+			grid-template-columns: 100px calc(20% - 100px) 10% 16% 17% 17% calc(
+					20% - 60px
+				);
+		}
+
+		span {
+			font-weight: 700;
+			padding: 10px 6px;
+		}
+	}
+
+	.nfc-events-log-item {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+		background-color: transparent;
+		border: 1px solid var(--nfc-color--border);
+		margin-bottom: 10px;
+		padding: 10px 20px;
+		border-radius: 6px;
+
+		@media (min-width: 900px) {
+			grid-template-columns: 100px calc(20% - 100px) 10% 16% 17% 17% calc(
+					20% - 60px
+				);
+		}
+
+		@media (min-width: 900px) and (max-width: 1250px) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		> span {
+			padding: 10px 5px;
+
+			> h4 {
+				font-size: 14px;
+				font-weight: 700;
+				margin-bottom: 5px;
+
+				@media (min-width: 1250px) {
+					display: none;
+				}
+			}
+
+			strong {
+				color: var(--nfc-color--dark);
+				font-weight: 400;
+			}
+		}
+
+		.nfc-event-status {
+			margin: 3px 0;
+		}
+
+		.nfc-events-log-item-product-statuses {
+			padding-top: 5px;
+			strong {
+				font-weight: 600;
+			}
+
+			span {
+				display: block;
+			}
+		}
+
+		.nfc-event-files {
+			> p {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 12px;
+			}
+
+			a {
+				position: relative;
+				display: inline-block;
+				width: 100%;
+				height: 60px;
+				max-width: 60px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				margin-bottom: 6px;
+				margin-right: 6px;
+			}
+
+			> span {
+				margin: -5px 0 0;
+				font-size: 11px;
+				display: block;
+				color: var(--nfc-color--grey);
+				font-style: italic;
+			}
+		}
+	}
+}
+
+.nfc-events-log-pagination {
+	text-align: center;
+	margin: 30px 0 0;
+
+	> span,
+	> a.page-numbers {
+		background: var(--nfc-color--light-grey);
+		margin: 0 2px;
+		border-radius: 100px;
+		min-width: 35px;
+		min-height: 35px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		font-size: 15px;
+		transition: all 0.25s;
+
+		&:not(.current) {
+			&:hover {
+				background-color: var(--nfc-color--dark);
+				color: var(--nfc-color--light);
+			}
+		}
+
+		&.next,
+		&.prev {
+			background: var(--nfc-color--dark);
+			color: var(--nfc-color--light);
+			padding: 0 20px;
+			text-decoration: none;
+		}
+
+		&.current {
+			opacity: 0.4;
+		}
+	}
+}
+
+.nfc-event-status {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 1.2;
+	color: var(--nfc-color--grey);
+	background-color: var(--nfc-color--light);
+	border-radius: 4px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	margin-right: 5px;
+	white-space: nowrap;
+	padding: 8px 14px;
+	margin-top: 6px;
+
+	span {
+		filter: brightness(40%);
+	}
+}
